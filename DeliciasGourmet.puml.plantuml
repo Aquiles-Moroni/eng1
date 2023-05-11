@@ -1,4 +1,4 @@
-@startuml
+@startuml 
 
 left to right direction
 
@@ -9,22 +9,24 @@ left to right direction
     actor Gerente_de_Vendas as gv
     actor Vendedor as vd 
 
+    rectangle "Sistema da Delícias Gourmet:"{
+    usecase "Conduzir Inspeções Regulares" as cir
+    usecase "Monitorar o Processo de Produção" as mpp
+    usecase "Comprar Materiais" as cma 
+    usecase "Conferir e Verificar Materiais" as cvm
     usecase "Organizar Materiais" as om  
     usecase "Gerenciar Materiais" as gm
     usecase "Supervisionar Estoque" as se
-    usecase "Receber Comissão" as rc
-    usecase "Vender Produtos" as vp
-    usecase "Controlar Vendas" as cv
-    usecase "Comprar Materiais" as cma
-    usecase "Conferir e Verificar Materiais" as cvm
     usecase "Garantir a entrega dos Materiais" as gem
     usecase "Planejar a utilização dos Materiais" as pum
-    usecase "Monitorar o Processo de Produção" as mpp
-    usecase "Conduzir Inspeções Regulares" as cir
+    usecase "Controlar Vendas" as cv
+    usecase "Formar equipe de Vendas" as fev
+    usecase "Receber Comissão" as rc
+    usecase "Vender Produtos" as vp
     usecase "Coordenar a entrega dos Produtos" as cep
     usecase "Registrar todas as Vendas" as rtv 
-    usecase "Formar equipe de Vendas" as fev
-    usecase "Cumprir Cotas" as cc 
+    usecase "Cumprir Cotas" as cc  
+    }
 
     vd -- rc
     vd -- cc 
